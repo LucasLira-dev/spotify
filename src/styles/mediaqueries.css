@@ -1,0 +1,126 @@
+@media screen and (max-width:767px) {
+    .offer__list-item {
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 3fr;
+        grid-gap: 16px;
+       
+        margin-bottom: 16px;
+    }
+
+    body {
+        overflow-x: hidden; /* Evita rolagem horizontal */
+    }
+
+    .main-container {
+        max-width: 100vw; /* Garante que o contêiner principal não exceda a largura da tela */
+        overflow-x: hidden; /* Evita rolagem horizontal */
+    }
+}
+
+
+
+@media screen and (max-width: 1015px) {
+
+    header.header-mobile{
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      
+    }
+
+
+    div.logo-spotify{
+        border-radius: 8px;
+        padding: 16px 0px 0px 16px;
+    }
+
+    div.logo-spotify img{
+        width: 80px;
+       
+    }
+
+    div.sidebar{
+        display: none;
+    }
+
+    div.btns{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .btn_pesquisar img{
+        width: 22px;
+    }
+
+    .btn_app{
+       
+        width: 80px;
+        height: 33px;
+        margin-left: 8px;
+        margin-right: 15px;
+        background-color: #fff;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 600;
+        border-radius: 20px;
+        border: 1px solid transparent;
+    }
+
+    span.fa-solid{
+        color: #fff;
+        font-size: 24px;
+        margin-left: 10px;
+        background-color: red;
+    }
+
+    .header_navigation{
+        display: none;
+    }
+    
+   /* main{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } */
+
+    .main-container{
+        margin-top: 30px;
+        margin-left: 5px;
+        margin-right: 5px;
+       
+       
+    }
+
+  
+
+    .playlist-container{
+        height: 100vh;
+        width: 100vw;
+        padding-top: 16px;
+        background-color: #121212;
+        overflow-y: auto; 
+        overflow: hidden;
+    }
+
+    .playlist{
+        margin: 24px;
+    }
+
+
+    .offer__scroll-container {
+        max-height: 100vh;
+    }
+    .offer__list-item{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    footer{
+        display: none;
+    }
+}
