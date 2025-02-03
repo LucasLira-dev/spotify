@@ -51,8 +51,18 @@ document.addEventListener('input', function () {
     requestApi(searchTerm);
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    const sejaPremium = document.querySelector('#sejaPremium');
+    const btn_x = document.querySelector('.btn_x');
 
-
+    if (sejaPremium && btn_x) {
+        btn_x.addEventListener('click', () => {
+            sejaPremium.style.display = 'none';
+        });
+    } else {
+        console.error('Elementos não encontrados');
+    }
+});
 
 
 
