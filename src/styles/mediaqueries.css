@@ -31,9 +31,9 @@
         margin-bottom: 12px;
     }
 
-    .card15{
+    /*.card9, .card10, .card11, .card12, .card13, .card14, .card15{
         display: none;
-    }
+    } */
 }
 
 
@@ -213,26 +213,38 @@
        
     }
 
-  
+   .playlist-container {
+        height: auto; /* Ajusta a altura para permitir a exibição completa dos cards */
+        overflow-x: auto; /* Permite rolagem horizontal */
+        overflow-y: auto; /* Desativa rolagem vertical */
+    }
 
-    .playlist-container{
+    .playlist {
+        display: inline-block; /* Garante que os itens sejam exibidos em linha */
+        vertical-align: top; /* Alinha os itens ao topo */
+        margin-right: 16px; /* Espaçamento entre os itens */
+    }
+
+   /* .playlist-container{
         height: 100vh;
         width: 100vw;
         padding-top: 16px;
         background-color: #121212;
-        overflow-y: auto; 
+        overflow-y: hidden; 
         overflow: hidden;
     }
 
     .playlist{
         margin: 24px;
+    }  */
+
+    .offer__scroll-container{
+       max-height: none;
+       overflow-y: hidden;
+       overflow-x: auto;
     }
 
 
-    .offer__scroll-container {
-        max-height: 100vh;
-      
-    }
 
 
     footer{
