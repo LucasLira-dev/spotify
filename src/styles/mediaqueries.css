@@ -71,7 +71,7 @@
         flex-direction: row;
         height: 230px;
         background-color: #FFCDD2; 
-        margin-top: 10px;
+        margin-top: 50px;
         position: relative;
         z-index: 20;
         padding: 36px 0px 0px 0px;
@@ -113,10 +113,16 @@
         font-weight: 600;
         border-radius: 20px;
         border: 1px solid transparent;
+        
+    }
+
+    #btn_premium a{
+        text-decoration: none;
+        color: #fff;
     }
 
     .btn_x{
-        margin: 36px 15px;
+        margin: -15px 10px;
         font-size: 24px;
         position: absolute;
         right: 0;
@@ -145,6 +151,8 @@
     }
 
     .footer_mobile{
+        position: relative;
+        bottom: 0;
         display: block;
         background-color: #121212;
         margin-top: 30px;
@@ -160,6 +168,10 @@
         margin-left: 20px;
         font-family: "DM Sans", sans-serif;
         color: #FFCDD2;
+    }
+
+    .footer_mobile .desc_footer p a:hover{
+       color: #ceadb0;
     }
 
     div.logoGithub{
@@ -185,6 +197,11 @@
         font-weight: 600;
         border-radius: 20px;
         border: 1px solid transparent;
+    }
+
+    .btn_app a{
+        text-decoration: none;
+        color: #121212;
     }
 
     span.fa-solid{
@@ -252,3 +269,17 @@
     }
 }
 
+@media screen and (orientation: landscape) {
+    .footer_mobile {
+        display: none;
+       /* position: relative; /* Permite que o footer se comporte como um elemento normal de bloco 
+        bottom: 0;
+        width: 100%;  
+        background-color: #121212;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px; 
+        z-index: 1000; 
+        */
+    }
+}
