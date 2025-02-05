@@ -64,10 +64,19 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+const originalHTML = document.documentElement.innerHTML;
 
 const btn_pesquisarMobile= document.getElementById('btn_pesquisarMobile');
 
+
 btn_pesquisarMobile.addEventListener('click', () => {
+      
+    // Salva o estado atual no histórico
+    history.pushState({ page: 2 }, "title 2", "?page=2");
+
+    
+
+    // Remove o conteúdo atual da página
     document.head.innerHTML = '';
     document.body.innerHTML = '';
 
@@ -224,5 +233,17 @@ btn_pesquisarMobile.addEventListener('click', () => {
     </body>
     </html>`
 
-});
+       // Função para restaurar o HTML original
+       function restoreOriginalHTML() {
+      
+        location.reload();
+       
+    }
 
+    // Adiciona um ouvinte para o evento popstate
+    window.addEventListener('popstate', (event) => {
+      restoreOriginalHTML();
+       
+    });
+
+});
