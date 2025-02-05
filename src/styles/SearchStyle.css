@@ -1,0 +1,252 @@
+
+body{
+    background-color: #0b0b0b;
+}
+
+header{
+    margin-top: 50px;
+}
+
+header h1{
+    color: #fff;
+    font-family: "Arial Regular", sans-serif;
+    font-size: 1.4em;
+    font-weight: 900;
+    padding-left: 10px;
+} 
+
+header .search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: 90vw;
+    min-height: 45px;
+    margin: auto;
+    border-radius: 5px;
+}
+
+header .search img{
+    width: 20px;
+    color: #0b0b0b;
+    height: 20px;
+    margin-left: 10px;
+    margin-top: 0px;
+}
+
+header input{
+    width: 90%;
+    height: 45px;
+    border: none;
+    background-color: transparent;
+    font-family: "Circurlar SP Vietnamese Regular", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 10px; 
+}
+
+header input::placeholder{
+    color: #0b0b0b;
+}
+
+.container_principal h2{
+ 
+  color: #fff;
+  font-family: "Circurlar SP Vietnamese Regular", sans-serif;
+  font-size: 1em;
+  margin-right: 10px;
+  margin-top: 20px; 
+}
+
+.offer__list-item {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+    gap: 5px;
+    margin-bottom: 20px;
+    padding-top: 8px;
+   
+    background-color: #0b0b0b;
+    /* CODIGO COM JS CALCULANDO OS CARDS POR COLUNA */
+    display: grid;
+    grid-gap: 15px;
+    
+  }
+  
+  .cards {
+    position: relative;
+    width: 240px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 8px;
+
+  }
+  
+  .cards span {
+    padding: 10px;
+    position: absolute;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+  }
+
+  
+  /* COLOR CARDS */
+  .card1 {
+    background-color: rgb(8, 198, 160);
+  }
+  .card2 {
+    background-color: rgb(83, 8, 140);
+  }
+  .card3 {
+    background: rgb(30, 78, 200);
+  }
+  .card4 {
+    background: rgb(234, 35, 78);
+  }
+  .card5 {
+    background: rgb(226, 34, 101);
+  }
+  .card6 {
+    background: rgb(43, 118, 193);
+  }
+  .card7 {
+    background: rgb(133, 87, 169);
+  }
+  .card8 {
+    background: rgb(20, 138, 8);
+  }
+  .card9 {
+    background: rgb(30, 50, 100);
+  }
+  .card10 {
+    background: rgb(233, 20, 41);
+  }
+  .card11 {
+    background: rgb(80, 55, 80);
+  }
+  .card12 {
+    background: rgb(216, 64, 0);
+  }
+  .card13 {
+    background: rgb(186, 93, 7);
+  }
+  .card14 {
+    background: rgb(0, 30, 80);
+  }
+  .card15 {
+    background: rgb(60, 30, 80);
+  }
+  /* FIM COLOR CARDS */
+  
+  .offer__list-item img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: auto;
+    width: 60px;
+    transform: rotate(25deg) translate(18%, -2%);
+  }
+  
+  /* CARD ARTISTA */
+
+.artist {
+    --column-count: 5;
+    --grid-gap: 24px;
+    --min-container-width: 372px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .grid-container {
+    grid-gap: 24px;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    min-width: 767px;
+  }
+  
+  .artist-card {
+    background: #181818;
+    border-radius: 8px;
+    -ms-flex: 1;
+    flex: 1;
+    isolation: isolate;
+    padding: 16px;
+    position: relative;
+    transition: background-color 0.3s ease;
+    width: 100%;
+  }
+  
+  .artist-card:hover {
+    background-color: #252525;
+  }
+  
+  .card-img {
+    padding-bottom: 100%;
+    position: relative;
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  
+  .artist-img {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    border-radius: 50%;
+  }
+  
+  .card-text {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    min-height: 62px;
+  }
+  
+  .card-text a {
+    display: inline-block;
+    max-width: 100%;
+    vertical-align: middle;
+  }
+  
+  .artist-name {
+    box-sizing: border-box;
+    margin-block: 0px;
+    font-size: 16px;
+    font-weight: 700;
+    padding-block-end: 8px;
+  }
+
+
+  @media screen and (max-width: 767px) {
+    .grid-container {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .cards {
+        width: 170px;
+        height: 100px;
+        overflow: hidden;
+        border-radius: 8px;
+      }
+    
+  }
+
+
+  @media screen and (min-width: 768px) {
+    .cards {
+        width: 330px;
+        height: 100px;
+        overflow: hidden;
+        border-radius: 8px;
+    
+      }
+  }
+
