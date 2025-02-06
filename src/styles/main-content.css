@@ -115,11 +115,27 @@ header{
     margin: 24px;
 }
 
+.mostrarTudo a{
+  color: #b3b3b3;
+  font-family: "Circular SP Vietnamese Regular", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  margin-bottom: 48px;
+  text-decoration: none;
+}
+
+.mostrarTudo a:hover{
+  text-decoration: underline;
+}
+
+
+
 .playlist #greeting{
     color: #fff;
-    font-size: 32px;
-    font-weight: 700;
-    margin-bottom: 48px;
+    font-family: "Circular SP Vietnamese Title Var Regular", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 5px;
 }
 
 .playlist .greeting-subtitle{
@@ -152,18 +168,11 @@ header{
   /* FIM SCROLL */
   
   .offer__list-item {
-    display: grid;
-    justify-items: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 16px;
-    gap: 16px;
-    margin-bottom: 16px;
-  
-    /* CODIGO COM JS CALCULANDO OS CARDS POR COLUNA */
-    display: grid;
-    gap: 16px;
-    grid-gap: 32px;
-    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+
   }
   
   .cards {
@@ -230,14 +239,78 @@ header{
   }
   /* FIM COLOR CARDS */
   
-  .offer__list-item img {
+  /*.offer__list-item img {
     position: absolute;
     right: 0;
     bottom: 0;
     height: auto;
     width: 107px;
     transform: rotate(25deg) translate(18%, -2%);
+  } */
+
+  .artistasPopulares{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+  
   }
+
+  .artistas{
+    padding: 10px;
+  }
+  
+  .artistas:hover{
+    background-color: #1F1F1F;
+  }
+  
+  .artistasPopulares img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+  }
+
+  .artistasPopulares .artistaNome{
+    color: #fff;
+    font-size: 16px;
+    font-weight: normal;
+    padding-top: 6px;
+  }
+
+  .artistasPopulares .artistaNome:hover{
+    text-decoration: underline;
+  }
+
+  .artistasPopulares .desc_artista{
+    color: #646464;
+    font-family: "Circular SP Vietnamese Regular", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    padding-top: 6px;
+  }
+
+  .SinglesContainer{
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .SinglesContainer h2{
+   
+    color: #fff;
+    font-family: "Circular SP Vietnamese Title Var Regular", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  .SinglesTopo{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  
   
   /* CARD ARTISTA */
 
@@ -245,7 +318,7 @@ header{
     --column-count: 5;
     --grid-gap: 24px;
     --min-container-width: 372px;
-  }
+  }   
   
   .hidden {
     display: none;

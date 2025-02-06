@@ -66,7 +66,21 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
         console.error('Elementos não encontrados');
     }
+
+  
 });
+
+const card1= document.querySelector('.card1');
+
+card1.addEventListener('click', () => {
+    console.log('Clicou no card 1');
+    const mainContainer = document.querySelector('.main-container');
+    event.preventDefault(); // Previne o comportamento padrão do link
+    
+    mainContainer.innerHTML= `
+           <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/1elUiq4X7pxej6FRlrEzjM?utm_source=generator" width="100%" height="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    `;
+}); 
 
 
 
