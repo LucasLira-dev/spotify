@@ -105,7 +105,7 @@ header{
 }
 
 .playlist-container{
-    height: 64vh;
+    height: 76vh;
     padding-top: 16px;
     margin: 10px;
     background-color: #121212;
@@ -125,7 +125,7 @@ header{
 .playlist .greeting-subtitle{
     color: #fff;
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 700; 
 }
 
 
@@ -137,7 +137,7 @@ header{
   
   /* SCROLL */
   .offer__scroll-container {
-    max-height: 42vh;
+    max-height: 52vh; 
     margin: 24px;
     overflow-y: auto;
   }
@@ -154,7 +154,7 @@ header{
   .offer__list-item {
     display: grid;
     justify-items: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 16px;
     gap: 16px;
     margin-bottom: 16px;

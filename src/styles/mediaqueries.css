@@ -48,6 +48,7 @@
         align-items: center;
         position: fixed;
         top: 0;
+        margin-bottom: 10px;
         background-color: #121212;
         width: 100%;
         z-index: 1000; /* Para ficar acima de todos os elementos */

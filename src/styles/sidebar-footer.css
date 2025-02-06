@@ -183,6 +183,7 @@ h1{
     bottom: 0;
     background: linear-gradient(to right, #AE2997,  #7370D1,  #6089E6, #519AF4 );
     width: 100vw;
+    height: 70px;
     padding: 15px;
  }
 
