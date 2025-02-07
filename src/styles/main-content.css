@@ -119,9 +119,12 @@ header{
   text-decoration: none;
 }
 
+
+
 .mostrarTudo a:hover{
   text-decoration: underline;
 }
+
 
 
 
@@ -291,6 +294,7 @@ header{
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 20px;
+    
   }
 
   .SinglesTopo{
@@ -298,8 +302,11 @@ header{
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    padding: 0px 22px 0px 20px;
     margin-bottom: -20px;
+  }
+
+  .SinglesTopo h2{
+    margin-left: 10px;
   }
 
   .singles{
@@ -308,7 +315,7 @@ header{
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
-    margin-left: 10px;
+
     margin-top: 8px;
   }
 
@@ -328,14 +335,14 @@ header{
   }
   
   .singlesImg img{
-    width: 143px;
-    height: 143px;
+    width: 149px;
+    height: 150px;
     border-radius: 8px;
    
   }
 
   #especial img{
-    height: 132px;
+    height: 137px;
   }
 
   .mscNome{
@@ -358,6 +365,53 @@ header{
     padding-top: 6px;
   }
 
+  .radiosContainer{
+    margin-top: 30px;
+    
+  }
+
+  .radiosTopo{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: -20px;
+    
+  }
+
+  .radiosTopo h2{
+    margin-left: 10px;
+  }
+
+  .radios{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 20px;
+  }
+
+  .radio{
+    width: 149px;
+    height: 190px;
+    margin-left: 8px;
+   
+  }
+
+  .radiosImg img{
+    width: 149px;
+    height: 150px;
+    border-radius: 8px;
+    padding: 5px;
+  }
+
+  .radioDesc{
+    color: #646464;
+    font-family: "Circular SP Vietnamese Regular", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    padding-top: 6px;
+  }
 
   /* CARD ARTISTA */
 

@@ -27,9 +27,21 @@
         max-width: 100vw;
         overflow-x: auto;
     }
+
+    .radios{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: row;
+        align-items: center;
+        max-width: 100vw;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
         
             
     body {
+        width: 100vw;
         overflow-x: hidden; 
     }  
 
@@ -315,7 +327,7 @@ iframe{
     }
 
     .playlist-container{
-        height: 72vh;
+        height: 92vh;
         padding-top: 16px;
         margin: 10px;
         background-color: #121212;
@@ -352,12 +364,21 @@ iframe{
         padding-left: 15px;
         padding-top: 10px;
         padding-bottom: 10px;
+        border-radius: 20px 20px 20px 20px;
+      }
+
+      #especial img{
+        height: 150px;
+        width: 150px;
       }
 
       .artistasPopulares img{
         border-radius: 100px;
       }
     
+      .radiosContainer{
+        margin-top: 100px;
+      }
    
 
 
