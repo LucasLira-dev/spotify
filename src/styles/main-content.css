@@ -107,6 +107,7 @@ header{
     align-items: flex-start;
     flex-direction: row;
     padding: 0px 22px 0px 20px;
+    margin-bottom: -20px;
 }
 
 .mostrarTudo a{
@@ -236,7 +237,7 @@ header{
     align-items: center;
     justify-content: center;
     margin-top: 8px;
-  
+    
   }
 
   .artistas{
@@ -250,18 +251,19 @@ header{
   .artistasPopulares img {
     width: 150px;
     height: 150px;
-    border-radius: 100px;
+    border-radius: 8px;
   }
 
-  .artistasPopulares .artistaNome{
+   .artistaNome{
     color: #fff;
     font-size: 16px;
     font-weight: normal;
     padding-top: 6px;
   }
 
-  .artistasPopulares .artistaNome:hover{
+   .artistaNome:hover{
     text-decoration: underline;
+    cursor: pointer;
   }
 
   .artistasPopulares .desc_artista{
@@ -270,6 +272,11 @@ header{
     font-size: 14px;
     font-weight: normal;
     padding-top: 6px;
+  }
+
+  .artistasPopulares .desc_artista:hover{
+    text-decoration: underline;
+    cursor: pointer;
   }
 
   .SinglesContainer{
@@ -291,9 +298,67 @@ header{
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
+    padding: 0px 22px 0px 20px;
+    margin-bottom: -20px;
+  }
+
+  .singles{
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 10px;
+    margin-top: 8px;
+  }
+
+  .single{
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+   
+  }
+
+  .single:hover{
+    background-color: #1F1F1F
   }
   
+  .singlesImg img{
+    width: 143px;
+    height: 143px;
+    border-radius: 8px;
+   
+  }
+
+  #especial img{
+    height: 132px;
+  }
+
+  .mscNome{
+    color: #fff;
+    font-size: 16px;
+    font-weight: normal;
+    padding-top: 6px;
+  }
+
+  .mscNome:hover{
+    text-decoration: underline;
+    cursor: pointer;
+  }
   
+  .singles .artistaNome{
+    color: #646464;
+    font-family: "Circular SP Vietnamese Regular", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    padding-top: 6px;
+  }
+
+
   /* CARD ARTISTA */
 
 .artist {
