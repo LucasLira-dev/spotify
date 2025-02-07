@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
             sejaPremium.style.display = 'none';
             if(sejaPremium.style.display === 'none') {
                 const playlistContainer = document.querySelector('.playlist-container');
-                playlistContainer.style.marginTop = '40px';
+                playlistContainer.style.marginTop = '80px';
             }
         }); 
     } else {

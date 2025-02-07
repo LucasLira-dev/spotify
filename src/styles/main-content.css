@@ -4,12 +4,7 @@
 
 
 /* HEADER */
-.main-container{
-    max-width: 80vw;
-    height: 100vh;
-    margin-left: 320px;
-    margin-right: 56px;
-}
+
 
 header{
     display: none;
@@ -104,15 +99,14 @@ header{
    border-radius: 40px;
 }
 
-.playlist-container{
-    height: 76vh;
-    padding-top: 16px;
-    margin: 10px;
-    background-color: #121212;
-}
 
 .playlist{
-    margin: 24px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    padding: 0px 22px 0px 20px;
 }
 
 .mostrarTudo a{
@@ -152,11 +146,7 @@ header{
   }
   
   /* SCROLL */
-  .offer__scroll-container {
-    max-height: 52vh; 
-    margin: 24px;
-    overflow-y: auto;
-  }
+ 
   
   .offer__scroll-container::-webkit-scrollbar {
     width: 1px;
@@ -238,22 +228,14 @@ header{
     background: rgb(60, 30, 80);
   }
   /* FIM COLOR CARDS */
-  
-  /*.offer__list-item img {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    height: auto;
-    width: 107px;
-    transform: rotate(25deg) translate(18%, -2%);
-  } */
+ 
 
   .artistasPopulares{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 8px;
   
   }
 

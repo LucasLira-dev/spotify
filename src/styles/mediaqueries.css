@@ -2,9 +2,10 @@
     .offer__list-item {
         display: flex;
         justify-content: flex-start;
-        align-items: center;
+        align-items: flex-start;
         flex-direction: column;
-    }
+    
+      }
 
     .artistasPopulares {
         display: flex;
@@ -12,25 +13,28 @@
         align-items: flex-start;
         flex-direction: row;
         align-items: center;
+        max-width: 100vw;
         overflow-x: auto;
-        overflow-y: hidden;
            
         }
         
             
-    /*body {
-        overflow-x: hidden; /* Evita rolagem horizontal 
-    }  */ 
+    body {
+        overflow-x: hidden; 
+    }  
 
-    .main-container {
-        max-width: 100vw; /* Garante que o contêiner principal não exceda a largura da tela */
-        overflow-x: hidden; /* Evita rolagem horizontal */
-    }
+  
+
+    /*.main-container {
+        max-width: 100vw;
+        overflow-x: hidden;
+    }  */
 
     
     .logo-spotify{
         margin-bottom: 15px;
     }
+
 
     .btn_pesquisar img{
         width: 22px;
@@ -50,6 +54,11 @@
 
 @media screen and (max-width: 1015px) {
 
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
 
     header.header-mobile{
         display: block;
@@ -161,12 +170,14 @@
         margin-top: 5px;
     }
 
+   
     .footer_mobile{
         position: relative;
         bottom: 0;
         display: block;
         background-color: #121212;
         margin-top: 30px;
+        margin-bottom: 0px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -248,23 +259,18 @@
     }
 
     .playlist {
-        display: inline-block; /* Garante que os itens sejam exibidos em linha */
-        vertical-align: top; /* Alinha os itens ao topo */
-        margin-right: 16px; /* Espaçamento entre os itens */
+        display: inline-block;
+        vertical-align: top; 
+        margin-right: 16px; 
     }
 
-   /* .playlist-container{
-        height: 100vh;
-        width: 100vw;
-        padding-top: 16px;
-        background-color: #121212;
-        overflow-y: hidden; 
-        overflow: hidden;
+    .mostrarTudo{
+        display: none;
     }
 
-    .playlist{
-        margin: 24px;
-    }  */
+ 
+
+   
 
     .offer__scroll-container{
        max-height: none;
@@ -289,25 +295,48 @@ iframe{
 
 
 
-@media screen and (min-width: 1016px) and (max-width: 1200px) {
+@media screen and (min-width: 1016px) {
+
+    .main-container{
+        max-width: 80vw;
+        height: 100vh;
+        margin-left: 320px;
+        margin-right: 56px;
+    }
+
+    .playlist-container{
+        height: 73vh;
+        padding-top: 16px;
+        margin: 10px;
+        background-color: #121212;
+    }
+
+    .playlist{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: row;
+      
+    }
+
+    .offer__scroll-container {
+        max-height: 52vh; 
+        margin: 24px;
+        overflow-y: auto;
+      }
+      
+    
+   
+
+
 iframe{
     margin-top: 0px;
     margin-bottom: 0px;
     height: 80vh;
 }
 
-.playlist-container{
-    width: 100vw;
-}
 
-.offer__list-item {
-    display: grid;
-    justify-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 16px;
-   
-    margin-bottom: 16px;
-}
+
 }
 
 
@@ -319,15 +348,13 @@ iframe{
         width: 100vw;
     }
     
-       .offer__list-item {
-            
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            flex-direction: row;
-
-            flex-wrap: nowrap;
-        } 
+    .offer__list-item {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+    
+      }
 
         .cards{
             width: 3200px;
