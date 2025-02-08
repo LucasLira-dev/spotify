@@ -117,6 +117,7 @@ header{
   font-weight: normal;
   margin-bottom: 48px;
   text-decoration: none;
+  
 }
 
 
@@ -235,6 +236,7 @@ header{
  
 
   .artistasPopulares{
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -288,7 +290,6 @@ header{
   }
 
   .SinglesContainer h2{
-   
     color: #fff;
     font-family: "Circular SP Vietnamese Title Var Regular", sans-serif;
     font-size: 24px;
@@ -298,6 +299,7 @@ header{
   }
 
   .SinglesTopo{
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -350,6 +352,7 @@ header{
     font-size: 16px;
     font-weight: normal;
     padding-top: 6px;
+    padding-left: 10px;
   }
 
   .mscNome:hover{
@@ -363,10 +366,12 @@ header{
     font-size: 14px;
     font-weight: normal;
     padding-top: 6px;
+    padding-left: 10px;
+    padding-bottom: 8px;
   }
 
   .radiosContainer{
-    margin-top: 30px;
+    margin-top: 20px;
     
   }
 
@@ -388,22 +393,32 @@ header{
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
-    margin-top: 20px;
+    margin-top: 10px;
   }
 
   .radio{
-    width: 149px;
-    height: 190px;
+    display: flex; 
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
     margin-left: 8px;
+    padding-bottom: 10px;
     
   }
 
-  .radiosImg img{
-    width: 148px;
-    height: 150px;
-    border-radius: 8px;
-    padding: 5px;
+  .radio:hover{
+    background-color: #1F1F1F;
   }
+
+  .radiosImg img{
+    width: 170px;
+    height: 170px;
+    border-radius: 8px;
+    padding: 8px;
+    padding-right: 15px;
+  } 
 
   .radioDesc{
     color: #646464;
@@ -411,8 +426,18 @@ header{
     font-size: 14px;
     font-weight: normal;
     padding-top: 6px;
+    padding-left: 10px;
+    
   }
 
+  iframe{
+    margin-top: 10px;
+    margin-right: 10px;
+    padding-top: 15px;
+    
+  }
+
+  
   /* CARD ARTISTA */
 
 .artist {
