@@ -290,11 +290,12 @@ header{
   }
 
   .SinglesContainer h2{
+   
     color: #fff;
     font-family: "Circular SP Vietnamese Title Var Regular", sans-serif;
     font-size: 24px;
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     
   }
 
@@ -309,6 +310,11 @@ header{
 
   .SinglesTopo h2{
     margin-left: 10px;
+    color: #fff;
+    font-family: "Circular SP Vietnamese Title Var Regular", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 5px;
   }
 
   .singles{
