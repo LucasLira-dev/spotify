@@ -314,7 +314,7 @@ header{
     font-family: "Circular SP Vietnamese Title Var Regular", sans-serif;
     font-size: 24px;
     font-weight: 600;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
 
   .singles{
@@ -392,6 +392,7 @@ header{
 
   .radiosTopo h2{
     margin-left: 10px;
+    margin-bottom: 18px;
   }
 
   .radios{
@@ -556,9 +557,7 @@ header{
   }
   /* FIM CARD ARTISTA */
 
-  .library_button:hover{
-    border: 2px solid transparent;
-  }
+ 
 
  a span:hover{
     color: #fff;
@@ -568,10 +567,13 @@ header{
   border: 1px solid #fff;
 }
   
-.section-playlist_button:hover {
-  border: 3px solid transparent;
+.section-playlist_content .section-playlist_button:hover {
+  border: 2px solid transparent;
   color: black;
+  outline: 2px solid black;
+ 
 }
+
 
 .languages_button:hover{
   border: 2px solid #fff;
@@ -579,6 +581,11 @@ header{
 
 .library_content span:hover{
   color: #fff;
+  
+}
+
+.bibli{
+  margin-top: 3px;
 }
 
 .subscribe:hover{
@@ -586,9 +593,7 @@ header{
 }
 
 
-.div_btn_inscrever:hover{
-  border: 2px solid transparent;
-}
+
 
 .footer_mobile{
   display: none;
